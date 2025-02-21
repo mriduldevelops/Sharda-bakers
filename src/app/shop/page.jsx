@@ -9,7 +9,7 @@ function Shop() {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const query = `*[_type == "cake"] | order(_createdAt desc)[0...4]{
+        const query = `*[_type == "cake"]{
             _id,
             name,
             weight,
@@ -28,7 +28,6 @@ function Shop() {
     fetchProducts();
   }, []);
 
-  console.log(products)
   return (
     <div className='p-4 md:p-10 bg-red-950 bg-opacity-10'>
       <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-8'>

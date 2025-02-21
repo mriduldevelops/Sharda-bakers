@@ -37,8 +37,6 @@ function Home() {
     fetchProducts();
   }, []);
 
-  console.log(newlyArrived)
-
   return (
     <div className='bg-red-950 bg-opacity-10 min-h-screen px-4 md:px-10 pb-10'>
       <div className='bg-white rounded-3xl h-[40vh] lg:h-[80vh] w-full overflow-hidden shadow-md relative' >
