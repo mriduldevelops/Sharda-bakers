@@ -1,0 +1,58 @@
+import cakeImg from '@/assets/butterscotch-cake-5.webp'
+
+export const data = [
+    {
+        id: 101,
+        name: "ButterScotch Cake",
+        weight: "1kg",
+        categroy: "Birthday Cake",
+        image: cakeImg,
+        discountedPrice: 750,
+        originalPrice: 930,
+    },
+    {
+        id: 102,
+        name: "Chocolate Cake",
+        weight: "2kg",
+        categroy: "Birthday Cake",
+        image: cakeImg,
+        discountedPrice: 850,
+        originalPrice: 930,
+    },
+    {
+        id: 103,
+        name: "Black Forest Cake",
+        weight: "1kg",
+        categroy: "Birthday Cake",
+        image: cakeImg,
+        discountedPrice: 750,
+        originalPrice: 930,
+    },
+    {
+        id: 104,
+        name: "Red Velevet Cake",
+        weight: "1/2kg",
+        categroy: "Birthday Cake",
+        image: cakeImg,
+        discountedPrice: 1150,
+        originalPrice: 1430,
+    },
+    {
+        id: 105,
+        name: "Black forest Cake",
+        weight: "1kg",
+        categroy: "Birthday Cake",
+        image: cakeImg,
+        discountedPrice: 750,
+        originalPrice: 930,
+    },
+    {
+        id: 106,
+        name: "ButterScotch Cake",
+        weight: "1kg",
+        categroy: "Birthday Cake",
+        image: cakeImg,
+        discountedPrice: 750,
+        originalPrice: 930,
+    },
+]

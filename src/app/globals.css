@@ -1,6 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Merienda:wght@300..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Syne:wght@400..800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.merienda{
+  font-family: "Merienda", serif;
+}
+
+.syne {
+  font-family: "Syne", serif;
+}
+
+.caveat-brush {
+  font-family: "Caveat Brush", serif;
+}
 
 :root {
   --background: #ffffff;

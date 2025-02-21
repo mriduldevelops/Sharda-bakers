@@ -1,5 +1,9 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Nav from "./_components/Nav";
+import { AuthProvider } from "@/context/AuthContext";
+import Footer from "./_components/Footer";
+import { SanityLive } from "@/sanity/lib/live";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -22,7 +26,12 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <AuthProvider>
+          <SanityLive/>
+          <Nav />
+          {children}
+          <Footer/>
+        </AuthProvider>
       </body>
     </html>
   );
