@@ -1,9 +1,9 @@
 'use client';
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Suspense } from 'react';
 import { useSearchParams, useRouter } from 'next/navigation';
 import axios from 'axios';
 
-function EmailVerification() {
+function EmailVerificationContent() {
     const router = useRouter();
     const searchParams = useSearchParams();
     const email = searchParams.get('email');
@@ -14,7 +14,6 @@ function EmailVerification() {
         try {
             const response = await axios.post('/api/verify-email', { email, otp });
             if (response.status === 200) {
-                // alert('Email verified successfully!');
                 router.push('/login');
             }
         } catch (error) {
@@ -49,4 +48,10 @@ function EmailVerification() {
     );
 }
 
-export default EmailVerification;
+export default function EmailVerification() {
+    return (
+        <Suspense fallback={<div>Loading...</div>}>
+            <EmailVerificationContent />
+        </Suspense>
+    );
+}
